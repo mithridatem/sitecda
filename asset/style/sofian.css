@@ -1,7 +1,31 @@
 .sofianB {
     text-align: center;
+    width: 500px;
+    margin: auto;
+    background-color: #F8D0C3;
+    padding: 30px;
+    border-radius: 20px;
+    border: solid 1px coral;
 }
 
-li {
-    list-style-type: none;
+.sofianB h3 {
+    text-align: left;
+    text-decoration: underline;
+}
+
+.sofian-img {
+    width: 100px;
+    object-fit: contain;
+}
+
+.cont-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sofian-titre {
+    background-color: coral;
+    padding: 15px;
+    border-radius: 20px;
 }
