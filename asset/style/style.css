@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 20px;
+    padding: 20px;
+    background-color: hsl(0, 9%, 93%);
+    backdrop-filter: blur(10px);
+  
+    font-family: 'Andale Mono', monospace;
+  }
+  
+  img{
+    width: 20%;
+
+  }
+
+  
