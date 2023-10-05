@@ -9,10 +9,122 @@
   
     font-family: 'Andale Mono', monospace;
   }
-  
-  img{
-    width: 20%;
+  #container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: lightblue;
+    margin: 30px;
 
   }
+  .container-text{
+    padding-left: 30px;
+  }
+  .profile-pic{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  img{
+    width: 20%;
+  }
+  /*MENU DEROULANT*/
+.hamburger-menu {
+    display: block;
+    position: relative;
+    font-size: 24px;
+    width: 100%;
+  }
+  
+  .hamburger-menu input {
+    display: none;
+  }
+  ul,
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
 
+.hamburger-menu {
+  display: block;
+  position: relative;
+  font-size: 24px;
+  width: 100%;
+}
+
+.hamburger-menu input {
+  display: none;
+}
+
+.hamburger-menu label {
+  display: block;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 2;
+  background-color: #f6f6f6;
+  color: #b38b59;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.hamburger-menu input:checked + label {
+  transform: rotate(180deg);
+}
+
+.hamburger-menu ul {
+  position: fixed;
+  border-radius: 15px;
+  list-style: none;
+  background-color: #f6f6f6;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.hamburger-menu ul.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.hamburger-menu ul.menu li {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.hamburger-menu ul.menu li a {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: transparent;
+  letter-spacing: 2px;
+  -webkit-text-stroke: 1px #b38b59;
+  background: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, -webkit-text-stroke-color 0.3s ease;
+  letter-spacing: 2px;
+}
+
+.hamburger-menu ul.menu li a:hover {
+  background-color: #eee;
+  -webkit-text-stroke-color: #b38b59;
+}
+
+.hamburger-menu input:checked ~ ul {
+  opacity: 1;
+  pointer-events: auto;
+}
   
