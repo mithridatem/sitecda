@@ -9,6 +9,14 @@
   
     font-family: 'Andale Mono', monospace;
   }
+
+  .stagiaires{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border-radius:20px ;
+    background-color: lightblue;
+  }
   #container{
     display: flex;
     justify-content: center;
